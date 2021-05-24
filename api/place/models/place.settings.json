@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "place",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "location": {
+      "type": "text"
+    },
+    "price": {
+      "type": "string"
+    },
+    "phonenumber": {
+      "type": "text"
+    },
+    "amenities": {
+      "type": "richtext"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "typeof": {
+      "type": "text"
+    },
+    "idealfor": {
+      "type": "richtext"
+    },
+    "accessibility": {
+      "type": "richtext"
+    },
+    "toilet": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "time": {
+      "type": "richtext"
+    },
+    "deactivated": {
+      "type": "boolean"
+    },
+    "unavailabledate": {
+      "type": "text"
+    },
+    "img": {
+      "type": "boolean"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
